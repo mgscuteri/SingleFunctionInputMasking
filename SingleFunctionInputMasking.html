@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Single Function Input Masking</title>
+  <meta name="author" content="Michael Scuteri">
+  <link rel="stylesheet" href="SingleFunctionInputMasking.css">
+</head>
+
+<body>
+  <div>
+    <h2>Single Function Input Masking</h2>
+    This page demonstrates how to perform input masking on HTML input objects by binding a single stateless javascript function to the "input" event of all input objects containing a value for the optional "data-mask" HTML attribute.
+  </div>
+  
+  </p>
+  
+  <b>Supported data-format string value types</b>
+  
+  <div>
+    alphabetical = 'a'
+  </div>
+    alphaNumeric = 'A'
+  <div>
+    numeric = *
+  </div>
+  
+  </p>
+  
+  <b> Examples </b> 
+  
+  <table style="width:700px">  
+    <tr>
+      <th></th>
+      <th></th>
+      <th>data-format</th>
+      <th>data-mask</th>
+    </tr>
+    <tr>
+      <td>Date</td>
+      <td><input id="date" type="text" data-format="**-**-****" data-mask="MM-DD-YYYY"></td>
+      <td>**-**-****</td>
+      <td>MM-DD-YYYY</td>
+    </tr>
+    <tr>
+      <td>Date/Time</td>
+      <td><input id="datetime" type="text" data-format="**-**-**** **:**:**" data-mask="MM-DD-YYYY hh:mm:ss"></td>
+      <td>**-**-**** **:**:**</td>
+      <td>MM-DD-YYYY hh:mm:ss</td>
+    </tr>
+    <tr>
+      <td>Phone Number</td>
+      <td><input id="phone" type="text" data-format="(***) ***-****" data-mask="(   )    -    "></td>
+      <td>(***) ***-****</td>
+      <td>(&nbsp;&nbsp;&nbsp;) &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Alt Phone Number</td>
+      <td><input id="altPhone" type="text" data-format="(***) ***-****" data-mask="(###) ###-####"></td>
+      <td>(***) ***-****</td>
+      <td>(###) ###-####</td>
+    </tr>
+    <tr>
+      <td>Alphabetical Area Code</td>
+      <td><input id="alphaPhone" type="text" data-format="(aaa) ***-****" data-mask="(aaa) ###-####"> </td>
+      <td>(aaa) ***-****</td>
+      <td>(aaa) ###-####</td>
+    </tr>
+  </table>
+  <script type="text/javascript" src="SingleFunctionInputMasking.js"></script>
+</body>
+</html>
