@@ -16,60 +16,44 @@
 See functioning demo on codepen
   <a href ="https://codepen.io/mgscuteri/pen/VwYmPGO"> here </a>
   </br>
-  </p>
   
-  <b>Supported data-format string value types</b>
-  
-  <div>
-    alphabetical = 'a'
-  </div>
-    alphaNumeric = 'A'
-  <div>
-    numeric = *
-  </div>
-  
-  </p>
-  
-  <b> Examples </b> 
-  
-  <table style="width:700px">  
-    <tr>
-      <th></th>
-      <th></th>
-      <th>data-format</th>
-      <th>data-mask</th>
-    </tr>
-    <tr>
-      <td>Date</td>
-      <td><input id="date" type="text" data-format="**-**-****" data-mask="MM-DD-YYYY"></td>
-      <td>**-**-****</td>
-      <td>MM-DD-YYYY</td>
-    </tr>
-    <tr>
-      <td>Date/Time</td>
-      <td><input id="datetime" type="text" data-format="**-**-**** **:**:**" data-mask="MM-DD-YYYY hh:mm:ss"></td>
-      <td>**-**-**** **:**:**</td>
-      <td>MM-DD-YYYY hh:mm:ss</td>
-    </tr>
-    <tr>
-      <td>Phone Number</td>
-      <td><input id="phone" type="text" data-format="(***) ***-****" data-mask="(   )    -    "></td>
-      <td>(***) ***-****</td>
-      <td>(&nbsp;&nbsp;&nbsp;) &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    </tr>
-    <tr>
-      <td>Alt Phone Number</td>
-      <td><input id="altPhone" type="text" data-format="(***) ***-****" data-mask="(###) ###-####"></td>
-      <td>(***) ***-****</td>
-      <td>(###) ###-####</td>
-    </tr>
-    <tr>
-      <td>Alphabetical Area Code</td>
-      <td><input id="alphaPhone" type="text" data-format="(aaa) ***-****" data-mask="(aaa) ###-####"> </td>
-      <td>(aaa) ***-****</td>
-      <td>(aaa) ###-####</td>
-    </tr>
-  </table>
-  <script type="text/javascript" src="SingleFunctionInputMasking.js"></script>
-</body>
-</html>
+</p>
+
+<b>Driving HTML Properties </b>
+<div>
+ "data-format" property uses predefined aliases that map to regEx strings in the "regExes" array
+ </br>
+ "data-fomrat" controls what displays in the input field by default
+</br>
+  (These two values must be the same length)
+</div>
+
+</br>
+
+<b>Already Implemented RegEx aliases </b> 
+
+<div>
+  alphabetical = 'a'
+  </br>
+  alphaNumeric = 'A'
+  </br>
+  numeric = *
+  </br>
+  Custom = (Feel free to add additional regEx aliases to "regExes" array)
+</div>
+
+</p>
+
+<b> Examples </b> 
+<div>
+##-##-#### &nbsp; &nbsp; 
+<input id="date" type="text" data-format="**-**-****" data-mask="MM-DD-YYYY">
+</div>
+<div>
+(###) ###-####
+<input id="phone" type="text" data-format="(***) ***-****" data-mask="(###) ###-####">
+</div>
+<div>
+(aaa) ###-####
+<input id="altPhone" type="text" data-format="(aaa) ***-****" data-mask="(aaa) ###-####">
+</div>
