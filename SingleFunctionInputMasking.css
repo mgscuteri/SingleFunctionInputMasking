@@ -1,6 +1,3 @@
-input[type='text'] { font-family: monospace; }
-
-td {
-  font-size: 14px;
-  font-family: monospace;
+html {
+  font-family: "Courier New"
 }
