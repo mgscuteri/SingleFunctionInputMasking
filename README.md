@@ -1,4 +1,4 @@
-#### Overview
+### Overview
 <p>
 This is a simple single JS function wich applies custom regEx based input masking to any HTML input element containing the two HTML properties below
 </p>
