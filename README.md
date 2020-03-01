@@ -19,4 +19,4 @@ Custom = (Feel free to add additional regEx aliases to "regExes" array) <br>
 </p>
  
 #### See it on CodePen
-https://github.com/mgscuteri/SingleFunctionInputMasking
+https://codepen.io/mgscuteri/pen/OJPRNeL
